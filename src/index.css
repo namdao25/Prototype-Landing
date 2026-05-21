@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Space Grotesk", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Custom Maroon, Beige, Woody colors */
+  --color-woody-dark: #351A13;
+  --color-woody-mid: #5E3123;
+  --color-woody-light: #8C4E3A;
+  --color-retro-cream: #FAF6EE;
+  --color-retro-beige: #ECE2D0;
+  --color-retro-maroon: #2C0B12;
+  --color-retro-maroon-light: #4D1822;
+  --color-retro-orange: #DF5834;
+  --color-retro-gold: #EA9F3E;
+  --color-retro-sage: #506756;
+}
+
+/* Custom scrollbars and styling utilities to maintain the hand-crafted feel */
+@layer utilities {
+  .border-wood {
+    border-width: 3px;
+    border-color: var(--color-retro-maroon);
+  }
+  .border-wood-thin {
+    border-width: 1.5px;
+    border-color: var(--color-retro-maroon);
+  }
+  .shadow-wood {
+    box-shadow: 4px 4px 0px 0px var(--color-retro-maroon);
+  }
+  .shadow-wood-sm {
+    box-shadow: 2px 2px 0px 0px var(--color-retro-maroon);
+  }
+  .shadow-wood-lg {
+    box-shadow: 8px 8px 0px 0px var(--color-retro-maroon);
+  }
+  .shadow-wood-orange {
+    box-shadow: 4px 4px 0px 0px var(--color-retro-orange);
+  }
+  .shadow-wood-gold {
+    box-shadow: 4px 4px 0px 0px var(--color-retro-gold);
+  }
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-retro-cream);
+  color: var(--color-retro-maroon);
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "QueueMate",
+  "description": "Premium teammate finder for FPS games designed to bring consistent, goal-aligning squads together.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
